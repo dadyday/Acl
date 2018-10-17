@@ -1,0 +1,22 @@
+{
+    "name": "user/acl",
+    "require": {
+        "nette/utils": "^2.5",
+        "nette/neon": "^2.4"
+    },
+    "require-dev": {
+        "nette/tester": "^2.1",
+        "tracy/tracy": "^2.5"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "test": "tester -C tests",
+        "cover": "tester -C tests --coverage tester/_cover.html --coverage-src src/"
+    },
+    "autoload": {
+        "psr-4": {
+            "Acl\\": "src/"
+        }
+    }
+}
